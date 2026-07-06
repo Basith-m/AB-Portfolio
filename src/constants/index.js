@@ -16,3 +16,14 @@ export const PERSONAL_INFO = {
   location: "Remote / Worldwide",
   phone: "+91 7736276633",
 };
+
+export const STATS = [
+  { label: 'Years Experience', value: '2+' },
+  { label: 'Projects Delivered', value: '10+' },
+  { label: 'Client Satisfaction', value: '100%' },
+];
+
+export const TECH_STACK = [
+  'HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'MongoDB', 'Tailwind CSS', 'GSAP', 
+  'TypeScript', 'Next.js', 'Express', 'PostgreSQL', 'C#', 'Python', '.NET', 'Umbraco'
+];

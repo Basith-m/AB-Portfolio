@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import GlassPanel from '../components/ui/GlassPanel';
 import {PERSONAL_INFO} from '../constants';
 
-const ROLES = ["Frontend Developer", "Full Stack Engineer", "UI Architect", "Problem Solver"];
+const ROLES = ["Frontend Developer", "Full Stack Engineer", "Solution Architect", "Problem Solver"];
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
@@ -94,19 +94,19 @@ const Hero = () => {
                 <div className="flex gap-4">
                     <span className="text-on-surface-variant opacity-40">2</span>
                     <span className="ml-4">
-                    <span className="text-secondary">"name"</span>: <span className="text-primary">"Abdul Basith.M"</span>,
+                    <span className="text-secondary">"name"</span>: <span className="text-primary">{PERSONAL_INFO.name}</span>,
                     </span>
                 </div>
                 <div className="flex gap-4">
                     <span className="text-on-surface-variant opacity-40">3</span>
                     <span className="ml-4">
-                    <span className="text-secondary">"role"</span>: <span className="text-primary">"Frontend Developer"</span>,
+                    <span className="text-secondary">"role"</span>: <span className="text-primary">{PERSONAL_INFO.role}</span>,
                     </span>
                 </div>
                 <div className="flex gap-4">
                     <span className="text-on-surface-variant opacity-40">4</span>
                     <span className="ml-4">
-                    <span className="text-secondary">"experience"</span>: <span className="text-primary">"2+ Years"</span>,
+                    <span className="text-secondary">"experience"</span>: <span className="text-primary">{PERSONAL_INFO.experience}</span>,
                     </span>
                 </div>
                 <div className="flex gap-4">
