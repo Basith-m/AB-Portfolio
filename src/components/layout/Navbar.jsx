@@ -48,7 +48,7 @@ const Navbar = () => {
         </div>
 
         <a
-          className="px-6 py-2 bg-primary text-surface-dim font-bold rounded-lg hover:opacity-80 transition-all scale-95 active:scale-90"
+          className="px-6 py-2 bg-primary text-surface-dim rounded-lg hover:opacity-80 transition-all scale-95 active:scale-90"
           href="#resume"
         >
           Resume
