@@ -1,3 +1,8 @@
+import aiBusinessImg from '../assets/images/ai-business-chat-assistant.png';
+import travelAppImg from '../assets/images/travel-website.png';
+import projectFairImg from '../assets/images/project-fair.png';
+import lungarnoImg from '../assets/images/lungarno-collection.png';
+
 export const NAV_LINKS = [
   { name: 'Home', href: '#hero' },
   { name: 'About', href: '#about' },
@@ -75,4 +80,72 @@ export const EXPERIENCE = [
     technologies: ["HTML", "CSS", "JavaScript","React.js", "Node.js", "Express", "MongoDB", "Firebase", "Git", "JSON Web Tokens (JWT)", "RESTful APIs", "Postman", "JSON server", "Bootstrap", "Material UI"],
     color: "primary", // For the timeline dot
   },
+];
+
+export const PROJECTS = [
+  {
+    id: 1,
+    title: "AI Business Assistant",
+    category: "AI-Powered Full Stack Web Application | RAG-Based AI Assistant",
+    description: "A production-ready AI chatbot that uses RAG and Google Gemini to deliver accurate, company-specific answers from a custom knowledge base.",
+    image: aiBusinessImg,
+    liveUrl: "https://ai-business-chat-assistant.vercel.app/",
+    githubUrl: "https://github.com/abdulbasith24/AI-Business-Chat-Assistant.git",
+    tech: [
+      { name: "Next.js", icon: "https://skillicons.dev/icons?i=nextjs" },
+      { name: "Tailwind CSS", icon: "https://skillicons.dev/icons?i=tailwind" },
+      { name: "PostgreSQL", icon: "https://skillicons.dev/icons?i=postgres" },
+      { name: "Google Gemini", icon: "https://cdn.simpleicons.org/googlegemini" },
+      { name: "TypeScript", icon: "https://skillicons.dev/icons?i=ts" }
+    ]
+  },
+  {
+    id: 2,
+    title: "Travel.",
+    category: "Travel Website",
+    description: "A visually appealing travel landing page showcasing responsive design, modern layouts, and modern frontend development practices.",
+    image: travelAppImg,
+    liveUrl: "https://travel-app-xi-drab.vercel.app/",
+    githubUrl: "https://github.com/Basith-m/Travel-App.git",
+    tech: [
+      { name: "React", icon: "https://skillicons.dev/icons?i=react" },
+      { name: "SCSS", icon: "https://skillicons.dev/icons?i=sass" },
+      { name: "JavaScript", icon: "https://skillicons.dev/icons?i=js" },
+      { name: "HTML5", icon: "https://skillicons.dev/icons?i=html" }
+    ]
+  },
+  {
+    id: 3,
+    title: "Project Fair",
+    category: "Web Application",
+    description: "Platform for showcasing and managing projects. allows users to upload, manage, and share projects.",
+    image: projectFairImg,
+    liveUrl: "https://project-fair-two.vercel.app/",
+    githubUrl: "https://github.com/Basith-m/Project-Fair.git",
+    tech: [
+      { name: "React", icon: "https://skillicons.dev/icons?i=react" },
+      { name: "Node.js", icon: "https://skillicons.dev/icons?i=nodejs" },
+      { name: "JavaScript", icon: "https://skillicons.dev/icons?i=js" },
+      { name: "MongoDB", icon: "https://skillicons.dev/icons?i=mongodb" },
+      { name: "Express", icon: "https://skillicons.dev/icons?i=express" }
+    ]
+  },
+  {
+    id: 4,
+    title: "Lungarno Collection",
+    category: "CMS Application",
+    description: "Umbraco CMS-based web application for a hospitality brand.",
+    image: lungarnoImg,
+    liveUrl: "#",
+    githubUrl: "#",
+    tech: [
+      { name: "Umbraco", icon: "https://cdn.simpleicons.org/umbraco" },
+      { name: "C#", icon: "https://skillicons.dev/icons?i=cs" },
+      { name: "ASP.NET / Razor", icon: "https://skillicons.dev/icons?i=dotnet" },
+      { name: "JavaScript", icon: "https://skillicons.dev/icons?i=js" },
+      { name: "LESS", icon: "https://cdn.simpleicons.org/less" },
+      { name: "GSAP", icon: "https://cdn.simpleicons.org/greensock" },
+      { name: "HTML5", icon: "https://skillicons.dev/icons?i=html" }
+    ]
+  }
 ];
