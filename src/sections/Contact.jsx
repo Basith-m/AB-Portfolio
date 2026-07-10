@@ -37,11 +37,29 @@ const Contact = () => {
     }, 1500);
   };
 
-  const contactItems = [
-    { label: 'Email Me', value: PERSONAL_INFO.email, icon: 'mail', color: 'primary' },
-    { label: 'Location', value: PERSONAL_INFO.location, icon: 'location_on', color: 'secondary' },
-    { label: 'Phone', value: PERSONAL_INFO.phone, icon: 'call', color: 'secondary' },
-  ];
+const contactItems = [
+  { 
+    label: 'Email Me', 
+    value: PERSONAL_INFO.email, 
+    href: `mailto:${PERSONAL_INFO.email}`,
+    icon: 'mail', 
+    color: 'primary' 
+  },
+  { 
+    label: 'Location', 
+    value: PERSONAL_INFO.location, 
+    href: null,
+    icon: 'location_on', 
+    color: 'secondary' 
+  },
+  { 
+    label: 'Phone', 
+    value: PERSONAL_INFO.phone, 
+    href: `tel:${PERSONAL_INFO.phone.replace(/\s/g, '')}`,
+    icon: 'call', 
+    color: 'secondary' 
+  },
+];
 
   return (
     <section ref={sectionRef} className="py-32 bg-surface-dim/50" id="contact">
@@ -66,7 +84,16 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="text-sm font-bold uppercase tracking-widest text-on-surface-variant">{item.label}</div>
-                    <div className="text-xl font-bold text-on-surface">{item.value}</div>
+                     {item.href ? (
+                        <a 
+                            href={item.href} 
+                            className="text-xl font-bold text-on-surface hover:text-secondary transition-colors"
+                        >
+                            {item.value}
+                        </a>
+                        ) : (
+                        <div className="text-xl font-bold text-on-surface">{item.value}</div>
+                    )}
                   </div>
                 </div>
               ))}
