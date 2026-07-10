@@ -1,13 +1,7 @@
-import { PERSONAL_INFO } from '../../constants';
+import { PERSONAL_INFO, SOCIAL_LINKS } from '../../constants';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const socialLinks = [
-    { name: 'GitHub', href: 'https://github.com/Basith-m' },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/abdul-basith-m24' },
-    { name: 'Twitter', href: 'https://x.com/abm6633' },
-  ];
 
   return (
     <footer className="bg-surface-dim border-t border-outline-variant py-12">
@@ -22,7 +16,7 @@ const Footer = () => {
         </div>
         
         <div className="flex items-center gap-8">
-          {socialLinks.map((link) => (
+          {SOCIAL_LINKS.map((link) => (
             <a 
               key={link.name}
               href={link.href}

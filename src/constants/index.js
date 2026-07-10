@@ -149,3 +149,18 @@ export const PROJECTS = [
     ]
   }
 ];
+
+export const SOCIAL_LINKS = [
+  { 
+    name: 'GitHub', 
+    href: 'https://github.com/Basith-m'
+  },
+  { 
+    name: 'LinkedIn', 
+    href: 'https://www.linkedin.com/in/abdul-basith-m24'
+  },
+  { 
+    name: 'Twitter', 
+    href: 'https://x.com/abm6633'
+  },
+];
