@@ -19,8 +19,8 @@ const Projects = () => {
         },
         opacity: 1,
         y: 0,
-        duration: 0.8,
-        stagger: 0.15,
+        duration: 0.7,
+        stagger: 0.30,
         ease: "power2.out"
         });
 
@@ -49,7 +49,10 @@ const Projects = () => {
             <h2 className="text-3xl md:text-5xl font-bold text-on-surface mb-2 md:mb-4">Selected Projects</h2>
             <p className="text-on-surface-variant text-base md:text-lg">A glimpse into some of the complex problems I've solved through code.</p>
           </div>
-          <a href="#" className="text-secondary text-sm md:text-base font-bold flex items-center gap-2 reveal-project opacity-0 translate-y-5">
+          <a href="https://github.com/Basith-m?tab=repositories" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary text-sm md:text-base font-bold flex items-center gap-2 reveal-project opacity-0 translate-y-5">
             View Archive <span className="material-symbols-outlined">trending_flat</span>
           </a>
         </div>

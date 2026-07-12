@@ -5,7 +5,7 @@ import { EXPERIENCE } from '../constants';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ExperienceItem = ({ item, index }) => {
+const ExperienceItem = ({ item }) => {
   return (
     <div className="relative pl-8 md:pl-12 pb-10 md:pb-12 last:pb-0 reveal-exp opacity-0">
       {/* Timeline Dot */}
@@ -61,15 +61,14 @@ const Experience = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // 1. Reveal Animation for items
       gsap.to('.reveal-exp', {
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: 'top 70%',
+          start: 'top 80%',
         },
         opacity: 1,
         y: 0,
-        duration: 0.8,
+        duration: 0.7,
         stagger: 0.3,
         ease: 'power2.out',
       });
@@ -118,7 +117,7 @@ const Experience = () => {
           {/* Items */}
           <div className="relative z-10">
             {EXPERIENCE.map((item, index) => (
-              <ExperienceItem key={index} item={item} index={index} />
+              <ExperienceItem key={index} item={item} />
             ))}
           </div>
         </div>
