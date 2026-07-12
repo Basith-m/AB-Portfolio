@@ -50,26 +50,26 @@ const Hero = () => {
   }, [displayText, isDeleting, roleIndex]);
 
   return (
-    <section ref={sectionRef} id="hero" className="min-h-[90vh] flex items-center px-gutter max-w-container-max mx-auto py-20 lg:flex-row">
+    <section ref={sectionRef} id="hero" className="min-h-[90vh] flex items-center px-gutter max-w-container-max mx-auto py-12 md:py-20 lg:flex-row">
       <div className="max-w-3xl">
-        <div className="font-mono text-secondary mb-4 tracking-wider reveal">WELCOME TO MY DIGITAL SPACE</div>
-        <h1 className="text-5xl md:text-7xl font-bold text-on-surface mb-6 leading-tight reveal">
+        <div className="font-mono text-secondary text-[12px] md:text-sm mb-2 md:mb-4 tracking-wider reveal">WELCOME TO MY DIGITAL SPACE</div>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-on-surface mb-4 md:mb-6 leading-tight reveal">
           Hi, I'm <span className="gradient-text">Abdul Basith.M</span>
         </h1>
-        <div className="h-8 mb-6 reveal">
-          <span className="text-2xl md:text-3xl text-on-surface-variant font-mono">
+        <div className="h-6 md:h-8 mb-6 md:mb-8 reveal">
+          <span className="text-lg md:text-2xl text-on-surface-variant font-mono">
             {displayText}
             <span className="w-2 h-6 bg-secondary inline-block ml-1 animate-pulse" />
           </span>
         </div>
-        <p className="text-on-surface-variant text-lg md:text-xl max-w-2xl leading-relaxed mb-10 reveal">
+        <p className="text-on-surface-variant text-base md:text-lg max-w-2xl leading-relaxed mb-8 md:mb-12 reveal">
           Crafting modern, scalable, and user-centric web applications with technical precision and architectural elegance.
         </p>
         <div className="flex flex-wrap gap-4 reveal">
-          <a href="#projects" className="px-8 py-4 bg-secondary text-surface-dim font-bold rounded-xl hover:brightness-110 transition-all flex items-center gap-2">
+          <a href="#projects" className="px-6 py-3 md:px-8 md:py-4 bg-secondary text-sm md:text-base text-surface-dim font-bold rounded-xl hover:brightness-110 transition-all flex items-center gap-2">
             View My Work <span className="material-symbols-outlined">arrow_downward</span>
           </a>
-          <a href="#contact" className="px-8 py-4 border border-outline hover:border-secondary hover:text-secondary transition-all rounded-xl flex items-center gap-2">
+          <a href="#contact" className="px-6 py-3 md:px-8 md:py-4 border border-outline text-sm md:text-base hover:border-secondary hover:text-secondary transition-all rounded-xl flex items-center gap-2">
             Let's Connect
           </a>
         </div>

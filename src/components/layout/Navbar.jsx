@@ -25,8 +25,8 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 w-full z-[100] bg-surface/60 backdrop-blur-md border-b border-on-surface/10 shadow-sm">
-      <div className="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
-        <a className="text-2xl font-bold text-primary" href="#hero">
+      <div className="flex justify-between items-center px-gutter py-3 md:py-4 max-w-container-max mx-auto">
+        <a className="text-xl md:text-2xl font-bold text-primary" href="#hero">
           AB<span className="text-secondary">.</span>
         </a>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              className={`text-sm transition-colors duration-300 ${
+              className={`text-xs lg:text-sm transition-colors duration-300 ${
                 activeSection === link.href.replace('#', '')
                   ? 'text-primary font-bold border-b-2 border-primary pb-1'
                   : 'text-on-surface-variant hover:text-primary'
@@ -48,7 +48,7 @@ const Navbar = () => {
         </div>
 
         <a
-          className="px-6 py-2 bg-primary text-surface-dim rounded-lg hover:opacity-80 transition-all scale-95 active:scale-90"
+          className="px-5 py-2 md:px-6 md:py-2.5 text-xs md:text-sm bg-primary text-surface-dim rounded-lg hover:opacity-80 transition-all scale-95 active:scale-90"
           href="#resume"
         >
           Resume
