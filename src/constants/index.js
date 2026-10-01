@@ -2,6 +2,7 @@ import aiBusinessImg from '../assets/images/ai-business-chat-assistant.png';
 import travelAppImg from '../assets/images/travel-website.png';
 import projectFairImg from '../assets/images/project-fair.png';
 import lungarnoImg from '../assets/images/lungarno-collection.png';
+import eventScaleImg from '../assets/images/eventscale.png';
 
 export const NAV_LINKS = [
   { name: 'Home', href: '#hero' },
@@ -146,6 +147,23 @@ export const PROJECTS = [
       { name: "LESS", icon: "https://cdn.simpleicons.org/less" },
       { name: "GSAP", icon: "https://cdn.simpleicons.org/greensock" },
       { name: "HTML5", icon: "https://skillicons.dev/icons?i=html" }
+    ]
+  },
+  {
+    id: 5,
+    title: "EventScale - Multi-vendor Event & Ticket Booking Platform",
+    category: "Web Application",
+    description: "Production-ready full-stack ticketing platform enabling multi-vender event management and real-time, concurrency-safe ticket reservations.",
+    image: eventScaleImg,
+    liveUrl: "https://eventscale-gamma.vercel.app",
+    githubUrl: "https://github.com/Basith-m/AI-Business-Chat-Assistant",
+    tech: [
+      { name: "React", icon: "https://skillicons.dev/icons?i=react" },
+      { name: "Tailwind CSS", icon: "https://skillicons.dev/icons?i=tailwind" },
+      { name: "Node.js", icon: "https://skillicons.dev/icons?i=nodejs" },
+      { name: "Express", icon: "https://skillicons.dev/icons?i=express" },
+      { name: "MongoDB", icon: "https://skillicons.dev/icons?i=mongodb" },
+      { name: "JWT", icon: "https://img.icons8.com/?size=100&id=rHpveptSuwDz&format=png&color=000000" },
     ]
   }
 ];
